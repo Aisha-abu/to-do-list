@@ -1,0 +1,55 @@
+{%extends 'base.html' %}
+
+
+{%block body%}
+<div class="card-body">
+    <h3 class="card-title">My TODO list</h3>
+    <p class="card-text">
+<form class="form-inline" method="GET" >
+    <input class="form-control  mx-sm-3" type="text" name="search-text" value="{{search_input}}">
+    <input class="btn btn-info" type="submit" value="Search">
+</form>
+    <br/>
+    <div class="container" align="center">
+
+    <table class="table">
+      <tbody>
+        <tr>
+            <th>TASKS</th>
+            <th></th>
+            <th> Action</th>
+        </tr>
+
+        <!--the task starts here-->
+
+            <tr>
+                <td><a href=""><s>Task tile</s></a> </td>
+                <td></td>
+                <td>Completed <a class="btn btn-danger btn-sm" href="">Delete</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="">Task title</a> </td>
+                <td></td>
+                <td><a class="btn btn-success btn-sm" href="">update</a>  <a class="btn btn-danger btn-sm" href="">Delete</a></td>
+            </tr>
+
+        <!--it ends here-->
+
+            <h3>No item in list</h3>
+
+        <tr>
+      </tbody>
+    </table>
+    </div>
+
+
+    </p>
+    <a href="" class="btn btn-primary">Add task</a>
+  </div>
+  <div class="card-footer text-muted">
+    Created by CHIBUIKE OGODO
+  </div>
+
+
+{%endblock%}
